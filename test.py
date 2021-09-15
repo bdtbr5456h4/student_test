@@ -35,7 +35,7 @@ def fast_sort(array):
                 equal.append(x)
             elif x > pivot:
                 greater.append(x)
-        return sort(less)+equal+sort(greater)
+        return fast_sort(less)+equal+fast_sort(greater)
     else:
         return array
 
